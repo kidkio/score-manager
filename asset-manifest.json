@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/score-manager/static/css/main.e986c4ed.css",
-    "main.js": "/score-manager/static/js/main.c706618e.js",
+    "main.js": "/score-manager/static/js/main.b64ce0ca.js",
     "index.html": "/score-manager/index.html",
     "main.e986c4ed.css.map": "/score-manager/static/css/main.e986c4ed.css.map",
-    "main.c706618e.js.map": "/score-manager/static/js/main.c706618e.js.map"
+    "main.b64ce0ca.js.map": "/score-manager/static/js/main.b64ce0ca.js.map"
   },
   "entrypoints": [
     "static/css/main.e986c4ed.css",
-    "static/js/main.c706618e.js"
+    "static/js/main.b64ce0ca.js"
   ]
 }
