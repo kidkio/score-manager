@@ -1,0 +1,115 @@
+/* 전역 스타일 */
+body {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 컨테이너 */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 카드 스타일 (팀 대시보드 등) */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 입력창 스타일 */
+input[type="number"], input[type="password"], select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px; /* 모바일 줌 방지를 위해 최소 16px 권장 */
+  box-sizing: border-box;
+}
+
+/* 버튼 공통 스타일 */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.1s, opacity 0.2s;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+button:active {
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+
+/* 포인트 컬러 버튼 */
+.btn-primary { background-color: #007bff; color: white; width: 100%; }
+.btn-success { background-color: #28a745; color: white; width: 100%; }
+.btn-danger { background-color: #dc3545; color: white; }
+
+/* 관리자 테이블 모바일 대응 */
+.admin-table-wrapper {
+  overflow-x: auto; /* 화면이 작으면 가로 스크롤 허용 */
+  background: white;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px; /* 테이블이 너무 찌그러지는 것 방지 */
+}
+
+th, td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* 요청 알림창 애니메이션 */
+.alert-box {
+  background: #fff3cd;
+  border: 2px solid #ffeeba;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  from { transform: rotate(-1deg); }
+  to { transform: rotate(1deg); }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.nav-header .home-icon {
+  font-size: 1.2rem;
+}
