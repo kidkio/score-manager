@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/score-manager/static/css/main.e986c4ed.css",
-    "main.js": "/score-manager/static/js/main.015ca5dd.js",
-    "index.html": "/score-manager/index.html",
-    "main.e986c4ed.css.map": "/score-manager/static/css/main.e986c4ed.css.map",
-    "main.015ca5dd.js.map": "/score-manager/static/js/main.015ca5dd.js.map"
+    "main.css": "/kidkio/score-manager/static/css/main.3a7cb555.css",
+    "main.js": "/kidkio/score-manager/static/js/main.29923146.js",
+    "index.html": "/kidkio/score-manager/index.html",
+    "main.3a7cb555.css.map": "/kidkio/score-manager/static/css/main.3a7cb555.css.map",
+    "main.29923146.js.map": "/kidkio/score-manager/static/js/main.29923146.js.map"
   },
   "entrypoints": [
-    "static/css/main.e986c4ed.css",
-    "static/js/main.015ca5dd.js"
+    "static/css/main.3a7cb555.css",
+    "static/js/main.29923146.js"
   ]
 }
