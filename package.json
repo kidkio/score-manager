@@ -1,0 +1,17 @@
+{
+  "name": "score-manager",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kidkio/score-manager",
+  "dependencies": {
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
