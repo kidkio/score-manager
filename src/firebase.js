@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-  authDomain: "score-manager-64e09.firebaseapp.com",
-  projectId: "score-manager-64e09",
-  storageBucket: "score-manager-64e09.firebasestorage.app",
-  messagingSenderId: "481157686145",
-  appId: "1:481157686145:web:56bd9cc7d2ec746df2be80",
-  measurementId: "G-0NZF4RVFY8"
+  authDomain: process.env.REACT_APP_GOOGLE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_GOOGLE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_GOOGLE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_GOOGLE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_GOOGLE_APP_ID,
+  measurementId: process.env.REACT_APP_GOOGLE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
