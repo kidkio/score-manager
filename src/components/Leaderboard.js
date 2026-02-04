@@ -22,7 +22,7 @@ const Leaderboard = () => {
       </nav>
 
       <div className="container">
-        <h1 style={{textAlign: 'center', fontSize: '2.5rem', color: '#fbbf24', margin: '30px 0'}}>🏆 RANKING</h1>
+        <h1 style={{textAlign: 'center', fontSize: '2.5rem', color: '#fbbf24', margin: '30px 0'}}>🏆 RANKING 🏆</h1>
         {teams.map((t, i) => (
           <div key={t.id} className="card" style={{
             backgroundColor: '#1e293b',
@@ -36,7 +36,7 @@ const Leaderboard = () => {
               </span>
               <span style={{fontSize: '1.2rem'}}>{t.name}</span>
             </div>
-            <div style={{fontSize: '1.8rem', fontWeight: '800'}}>{t.score} pts</div>
+            <div style={{fontSize: '1.8rem', fontWeight: '800'}}>{t.score} 🔮</div>
           </div>
         ))}
       </div>

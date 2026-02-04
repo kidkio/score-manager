@@ -48,29 +48,29 @@ const TeamPage = () => {
 
       <div className="container">
         <div className="card" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white'}}>
-          <div style={{fontSize: '4rem', fontWeight: '800'}}>{myTeam.score}</div>
-          <p style={{margin: 0, opacity: 0.8}}>현재 우리 팀 점수</p>
+          <div style={{fontSize: '4rem', fontWeight: '800'}}>🔮{myTeam.score}🔮</div>
+          <p style={{margin: 0, opacity: 0.8}}>현재 우리 팀 드래곤 볼 개수</p>
         </div>
 
         <div className="card">
-          <h3>🎯 다른 팀 점수 뺏기</h3>
-          <p style={{fontSize:'0.8rem', color:'#666'}}>상대방이 승인하면 점수가 이동합니다.</p>
+          <h3>🎯 다른 팀 드래곤 볼 뺏기</h3>
+          <p style={{fontSize:'0.8rem', color:'#666'}}>상대방이 승인하면 드래곤 볼이 이동합니다.</p>
           <select onChange={e => setTargetId(e.target.value)}>
             <option value="">공격할 팀 선택</option>
             {allTeams.filter(t => t.id !== myTeamId).map(t => (
-              <option key={t.id} value={t.id}>{t.name} ({t.score}점)</option>
+              <option key={t.id} value={t.id}>{t.name} ({t.score}개)</option>
             ))}
           </select>
-          <input type="number" placeholder="뺏을 점수 입력" onChange={e => setAmt(e.target.value)} />
+          <input type="number" placeholder="뺏을 드래곤 볼 개수 입력" onChange={e => setAmt(e.target.value)} />
           <button className="btn-success" onClick={sendReq}>뺏기 요청 전송</button>
         </div>
 
         {myTeam.pendingRequest && (
           <div className="alert-box">
             <h3 style={{margin: '0 0 10px 0'}}>🚨 방어 하세요!</h3>
-            <p><b>{myTeam.pendingRequest.fromName}</b>팀이 <b>{myTeam.pendingRequest.amount}점</b>을 요청했습니다.</p>
+            <p><b>{myTeam.pendingRequest.fromName}</b>이 <b>{myTeam.pendingRequest.amount}개의</b> 드래곤 볼을 요청했습니다.</p>
             <div style={{display:'flex', gap:'10px', marginTop:'15px'}}>
-              <button className="btn-danger" style={{flex: 1}} onClick={approve}>승인(점수 차감)</button>
+              <button className="btn-danger" style={{flex: 1}} onClick={approve}>승인({myTeam.pendingRequest.amount}개 차감)</button>
               <button className="btn-primary" style={{flex: 1, backgroundColor:'#999'}} onClick={async () => {
                 await updateDoc(doc(db, "teams", myTeamId), { pendingRequest: deleteField() });
               }}>거절</button>

@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBGbqfdYkh62RuJIVwcpR4iFhWCa6TlJGw",
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   authDomain: "score-manager-64e09.firebaseapp.com",
   projectId: "score-manager-64e09",
   storageBucket: "score-manager-64e09.firebasestorage.app",

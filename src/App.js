@@ -13,9 +13,9 @@ function MainMenu() {
     <div className="container" style={{ textAlign: 'center', paddingBottom: '100px' }}>
       <header style={{ margin: '40px 0' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: '800', color: '#1e293b' }}>
-          🏆 SCORE MASTER
+          🔮 신서유기 🔮
         </h1>
-        <p style={{ color: '#64748b' }}>팀 점수 관리 시스템에 오신 것을 환영합니다</p>
+        <p style={{ color: '#64748b' }}>드래곤 볼의 주인은 누구인가?!</p>
       </header>
 
       {/* 1. 전체 순위표 버튼 (가장 크게 배치) */}
@@ -26,7 +26,7 @@ function MainMenu() {
           padding: '30px'
         }}>
           <h2 style={{ margin: 0 }}>📊 전체 실시간 순위표</h2>
-          <p style={{ margin: '5px 0 0 0', opacity: 0.9 }}>현재 점수 현황 보기</p>
+          <p style={{ margin: '5px 0 0 0', opacity: 0.9 }}>현재 드래곤 볼 현황 보기</p>
         </div>
       </Link>
 
