@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const games = [
-  { id: 1, name: '👀 눈싸움', emoji: '👀' },
-  { id: 2, name: '🤜 손가락 씨름', emoji: '🤜' },
-  { id: 3, name: '⏱️ 타이머 10초 맞추기', emoji: '⏱️' },
-  { id: 4, name: '✂️ 릴레이 가위바위보', emoji: '✂️' },
-  { id: 5, name: '🗣️ 참참참', emoji: '🗣️' },
-  { id: 6, name: '🎲 마지막으로 랜덤', emoji: '🎲' }
+  { id: 1, name: '👀 눈싸움 👀', emoji: '👀' },
+  { id: 2, name: '🤜 손가락 씨름 🤜', emoji: '🤜' },
+  { id: 3, name: '⏱️ 타이머 10초 맞추기 ⏱️', emoji: '⏱️' },
+  { id: 4, name: '✂️ 릴레이 가위바위보 ✂️', emoji: '✂️' },
+  { id: 5, name: '🗣️ 참참참 🗣️', emoji: '🗣️' },
+  { id: 6, name: '🎲 랜덤 🎲', emoji: '🎲' }
 ];
 
 export default function Roulette() {
@@ -86,7 +86,7 @@ export default function Roulette() {
           borderRadius: '15px',
           border: '2px solid #3b82f6'
         }}>
-          <h2 style={{ color: '#1e40af', margin: '0 0 10px 0' }}>🎉 선택된 게임</h2>
+          <h2 style={{ color: '#1e40af', margin: '0 0 10px 0' }}>🎉 선택된 게임 🎉</h2>
           <p style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#1e40af', margin: 0 }}>
             {selectedGame.name}
           </p>
