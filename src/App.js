@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import AdminPage from './components/AdminPage';
 import TeamPage from './components/TeamPage';
 import Leaderboard from './components/Leaderboard';
+import Roulette from './components/Roulette';
 import useTeams from './hooks/useTeams'; // 실시간 팀 목록을 가져오는 훅 (아래 설명)
 import './App.css';
 
@@ -17,6 +18,19 @@ function MainMenu() {
         </h1>
         <p style={{ color: '#64748b' }}>드래곤 볼의 주인은 누구인가?!</p>
       </header>
+
+      {/* 0. 랜덤 룰렛 버튼 (가장 위에 배치) */}
+      <Link to="/roulette" style={{ textDecoration: 'none' }}>
+        <div className="card" style={{ 
+          background: 'linear-gradient(135deg, #ec4899 0%, #d946ef 100%)', 
+          color: 'white',
+          padding: '30px',
+          marginBottom: '20px'
+        }}>
+          <h2 style={{ margin: 0 }}>🎡 랜덤 룰렛</h2>
+          <p style={{ margin: '5px 0 0 0', opacity: 0.9 }}>게임을 랜덤하게 선택하기</p>
+        </div>
+      </Link>
 
       {/* 1. 전체 순위표 버튼 (가장 크게 배치) */}
       <Link to="/leaderboard" style={{ textDecoration: 'none' }}>
@@ -73,6 +87,7 @@ export default function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/team/:id" element={<TeamPage />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/roulette" element={<Roulette />} />
       </Routes>
     </BrowserRouter>
   );
